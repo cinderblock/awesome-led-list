@@ -1,5 +1,6 @@
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
+import ForkMe from "fork-me-on-github";
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -8,6 +9,7 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <>
+      <ForkMe repo="https://github.com/cinderblock/awesome-led-list" />
       <div className="p-2 flex gap-2 text-lg">
         <Link
           to="/"
