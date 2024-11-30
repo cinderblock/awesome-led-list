@@ -1,11 +1,10 @@
-import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import ForkMe from "fork-me-on-github";
-import { Count } from '../count';
+import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
+import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import ForkMe from 'fork-me-on-github';
 
-export const Route = createRootRoute({
-  component: RootComponent,
-});
+// export const Route = createRootRoute({
+//   component: RootComponent,
+// });
 
 const categories = {
   '/pattern-drivers': 'Pattern Drivers',
@@ -20,9 +19,9 @@ const categories = {
   '/connectors': 'Connectors',
   '/diffusive-materials': 'Diffusive Materials',
   '/commercial-pixel-systems': 'Commercial Pixel Systems',
-}
+};
 
-function RootComponent() {
+export default function Layout() {
   return (
     <>
       <ForkMe repo="https://github.com/cinderblock/awesome-led-list" />
@@ -36,41 +35,6 @@ function RootComponent() {
           activeOptions={{ exact: true }}
         >
           Home
-        </Link>{' '}
-        <Link
-          to="/about"
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          About
-        </Link>
-        <Link
-          to="/dynamic/$param"
-          params={{ param: 'path1' }}
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          path1
-        </Link>
-        <Link
-          to="/dynamic/$param"
-          params={{ param: 'path2' }}
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          path2
-        </Link>
-        <Link
-          to="/json"
-          search={{ query: 1 }}
-          activeProps={{
-            className: 'font-bold',
-          }}
-        >
-          json
         </Link>
         {Object.entries(categories).map(([path, label]) => (
           <>
@@ -89,7 +53,6 @@ function RootComponent() {
       </div>
       <hr />
       <Outlet />
-      <Count />
       <TanStackRouterDevtools position="bottom-right" />
     </>
   );
