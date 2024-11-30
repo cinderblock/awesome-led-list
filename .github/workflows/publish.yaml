@@ -10,6 +10,7 @@ on:
 
 jobs:
   publish:
+    name: Build and Publish
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
