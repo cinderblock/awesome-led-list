@@ -2,6 +2,10 @@
 
 This is the source code for the website [AwesomeLEDList.com](https://awesomeledlist.com), a bunch of crowd sourced lists of addressable pixel related products and resources.
 
+# ⚠️⚠️ Work In Progress ⚠️⚠️
+
+This is not live yet.
+
 ## Contributing
 
 If you have a product or resource you'd like to add, please submit a pull request.
