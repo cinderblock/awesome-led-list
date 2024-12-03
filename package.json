@@ -25,13 +25,17 @@
     "vite-react-ssg": "^0.8.1"
   },
   "dependencies": {
+    "@ribbon-studios/fork-me": "^1.1.2",
     "@tanstack/react-router": "^1.85.0",
     "@tanstack/router-devtools": "^1.85.0",
-    "fork-me-on-github": "^1.0.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "overrides": {
+    "@vinxi/react-server-dom": {
+      "react": ">=16.8.6",
+      "react-dom": ">=16.8.6"
+    },
     "fork-me-on-github": {
       "react": ">=16.8.6",
       "react-dom": ">=16.8.6"
