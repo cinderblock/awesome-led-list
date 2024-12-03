@@ -38,14 +38,16 @@ function RootComponent() {
           Home
         </Link>{' '}
         <Link
+          key="/about"
           to="/about"
           activeProps={{
             className: 'font-bold',
           }}
         >
           About
-        </Link>
+        </Link>{' '}
         <Link
+          key="/dynamic/$param"
           to="/dynamic/$param"
           params={{ param: 'path1' }}
           activeProps={{
@@ -53,8 +55,9 @@ function RootComponent() {
           }}
         >
           path1
-        </Link>
+        </Link>{' '}
         <Link
+          key="/dynamic/$param"
           to="/dynamic/$param"
           params={{ param: 'path2' }}
           activeProps={{
@@ -62,8 +65,9 @@ function RootComponent() {
           }}
         >
           path2
-        </Link>
+        </Link>{' '}
         <Link
+          key="/json"
           to="/json"
           search={{ query: 1 }}
           activeProps={{
@@ -72,20 +76,18 @@ function RootComponent() {
         >
           json
         </Link>
-        {Object.entries(categories).map(([path, label]) => (
-          <>
-            {' '}
-            <Link
-              key={path}
-              to={path}
-              activeProps={{
-                className: 'font-bold',
-              }}
-            >
-              {label}
-            </Link>
-          </>
-        ))}
+        {Object.entries(categories).flatMap(([path, label]) => [
+          ' ',
+          <Link
+            key={path}
+            to={path}
+            activeProps={{
+              className: 'font-bold',
+            }}
+          >
+            {label}
+          </Link>,
+        ])}
       </div>
       <hr />
       <Outlet />
