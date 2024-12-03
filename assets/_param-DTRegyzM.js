@@ -1,0 +1,2 @@
+import{b as s,j as a,r as e}from"./app-D1aEamC8.js";e("/dynamic/$param",()=>["/dynamic/path1","/dynamic/path2"]);const i=function(){const{param:n}=s.useParams(),t=s.useLoaderData();return a.jsxs("div",{className:"p-2",children:[a.jsx("h3",{children:"Param"}),a.jsx("p",{children:n}),a.jsx("p",{children:t.join(", ")})]})},m=({params:r})=>["this is a loader data",`in ${r.param}`];export{i as component,m as loader};
+//# sourceMappingURL=_param-DTRegyzM.js.map
