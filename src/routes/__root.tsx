@@ -1,6 +1,6 @@
-import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
-import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import ForkMe from "fork-me-on-github";
+import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
+import { TanStackRouterDevtools } from '@tanstack/router-devtools';
+import { ForkMe } from '@ribbon-studios/fork-me';
 import { Count } from '../count';
 
 export const Route = createRootRoute({
@@ -20,12 +20,12 @@ const categories = {
   '/connectors': 'Connectors',
   '/diffusive-materials': 'Diffusive Materials',
   '/commercial-pixel-systems': 'Commercial Pixel Systems',
-}
+};
 
 function RootComponent() {
   return (
     <>
-      <ForkMe repo="https://github.com/cinderblock/awesome-led-list" />
+      <ForkMe slug="cinderblock/awesome-led-list" />
       <div className="p-2 flex gap-2 text-lg">
         <Link
           key="/"

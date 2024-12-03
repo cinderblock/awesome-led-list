@@ -35,10 +35,6 @@
     "@vinxi/react-server-dom": {
       "react": ">=16.8.6",
       "react-dom": ">=16.8.6"
-    },
-    "fork-me-on-github": {
-      "react": ">=16.8.6",
-      "react-dom": ">=16.8.6"
     }
   }
 }
