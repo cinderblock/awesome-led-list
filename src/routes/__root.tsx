@@ -1,6 +1,6 @@
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
-import { ForkMe } from '@ribbon-studios/fork-me';
+// import ForkMe from '@ribbon-studios/fork-me';
 import { Count } from '../count';
 
 export const Route = createRootRoute({
@@ -25,7 +25,7 @@ const categories = {
 function RootComponent() {
   return (
     <>
-      <ForkMe slug="cinderblock/awesome-led-list" />
+      {/* <ForkMe.ForkMe slug="cinderblock/awesome-led-list" /> */}
       <div className="p-2 flex gap-2 text-lg">
         <Link
           key="/"
