@@ -11,4 +11,5 @@ export default defineConfig({
     sourcemap: true,
   },
   base: './',
+  mode: 'development',
 });
