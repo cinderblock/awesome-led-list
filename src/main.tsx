@@ -22,7 +22,7 @@ export const createRoot = ViteReactSSG(
   {
     router,
     routes: routeTree,
-    basename: import.meta.env.BASE_URL,
+    basename: import.meta.env.BASE_URL + '/',
   },
   () => {},
 );
